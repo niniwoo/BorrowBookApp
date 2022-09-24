@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCD3CC"
+    tools:context=".BookInfoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_book_info_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/book_info_item_margin_left"
+                android:layout_marginTop="@dimen/book_info_item_margin_top"
+                android:text="@string/book_info_title"
+                android:textSize="@dimen/book_info_string_size"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/edit_book_info_title"
+                android:layout_width="@dimen/book_info_edit_width"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/book_info_item_margin_left"
+                android:layout_marginTop="@dimen/book_info_item_margin_top"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:textSize="@dimen/book_info_string_size"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_book_info_title"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/tv_book_info_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/book_info_item_margin_left"
+                android:layout_marginTop="@dimen/book_info_item_margin_top"
+                android:text="@string/book_info_author"
+                android:textSize="@dimen/book_info_string_size"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edit_book_info_title" />
+
+            <EditText
+                android:id="@+id/edit_book_info_author"
+                android:layout_width="@dimen/book_info_edit_width"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/book_info_item_margin_left"
+                android:layout_marginTop="@dimen/book_info_item_margin_top"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:textSize="@dimen/book_info_string_size"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_book_info_author"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/tv_book_info_publisher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/book_info_item_margin_left"
+                android:layout_marginTop="@dimen/book_info_item_margin_top"
+                android:text="@string/book_info_publisher"
+                android:textSize="@dimen/book_info_string_size"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edit_book_info_author" />
+
+            <EditText
+                android:id="@+id/edit_book_info_publisher"
+                android:layout_width="@dimen/book_info_edit_width"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/book_info_item_margin_left"
+                android:layout_marginTop="@dimen/book_info_item_margin_top"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:textSize="@dimen/book_info_string_size"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_book_info_publisher"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/tv_book_info_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/book_info_item_margin_left"
+                android:layout_marginTop="@dimen/book_info_item_margin_top"
+                android:text="@string/book_info_year"
+                android:textSize="@dimen/book_info_string_size"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edit_book_info_publisher" />
+
+            <EditText
+                android:id="@+id/edit_book_info_year"
+                android:layout_width="@dimen/book_info_edit_width"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/book_info_item_margin_left"
+                android:layout_marginTop="@dimen/book_info_item_margin_top"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:textSize="@dimen/book_info_string_size"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_book_info_year"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/tv_book_info_book_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/book_info_item_margin_left"
+                android:layout_marginTop="@dimen/book_info_item_margin_top"
+                android:text="@string/book_info_book_status"
+                android:textSize="@dimen/book_info_string_size"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edit_book_info_year" />
+
+            <RadioGroup
+                android:id="@+id/rg_book_info_book_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/book_info_item_margin_left"
+                android:layout_marginTop="@dimen/book_info_item_margin_top"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_book_info_book_status">
+
+                <RadioButton
+                    android:id="@+id/rb_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/book_info_rad_btn_share"
+                    android:textSize="@dimen/book_info_string_size" />
+
+                <RadioButton
+                    android:id="@+id/rb_giveaway"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/book_info_rad_btn_give"
+                    android:textSize="@dimen/book_info_string_size" />
+
+                <RadioButton
+                    android:id="@+id/rb_rent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/book_info_rad_btn_rent"
+                    android:textSize="@dimen/book_info_string_size" />
+
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv_book_info_rent_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/book_info_item_margin_left"
+                android:layout_marginTop="@dimen/book_info_item_margin_top"
+                android:text="@string/book_info_rent_fee"
+                android:textSize="@dimen/book_info_string_size"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rg_book_info_book_status" />
+
+            <EditText
+                android:id="@+id/edit_book_info_rent_fee"
+                android:layout_width="@dimen/book_info_edit_width"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/book_info_item_margin_left"
+                android:layout_marginTop="@dimen/book_info_item_margin_top"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                android:textSize="@dimen/book_info_string_size"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_book_info_rent_fee"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/tv_book_info_owner_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/book_info_item_margin_left"
+                android:layout_marginTop="@dimen/book_info_item_margin_top"
+                android:text="@string/book_info_owner_id"
+                android:textSize="@dimen/book_info_string_size"
+                android:visibility="gone"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edit_book_info_rent_fee" />
+
+            <EditText
+                android:id="@+id/edit_book_info_owner_id"
+                android:layout_width="@dimen/book_info_edit_width"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/book_info_item_margin_left"
+                android:layout_marginTop="@dimen/book_info_item_margin_top"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:textSize="@dimen/book_info_string_size"
+                android:visibility="gone"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_book_info_owner_id" />
+
+            <Button
+                android:id="@+id/btn_book_info_submit"
+                android:layout_width="@dimen/book_info_edit_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/book_info_item_margin_top"
+                android:backgroundTint="#bb937E"
+                android:text="@string/book_info_add_book"
+                android:textSize="@dimen/book_info_string_size"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edit_book_info_owner_id" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

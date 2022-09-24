@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserInfoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_user_info_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/user_info_item_margin_left"
+                android:layout_marginTop="@dimen/user_info_item_margin_top"
+                android:text="@string/login_id"
+                android:textSize="@dimen/user_info_string_size"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/edit_user_info_id"
+                android:layout_width="@dimen/user_info_edit_width"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/user_info_item_margin_left"
+                android:layout_marginTop="@dimen/user_info_item_margin_top"
+                android:inputType="text"
+                android:textSize="@dimen/user_info_string_size"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_user_info_id"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:importantForAutofill="no" />
+
+            <Button
+                android:id="@+id/btn_edit_user_info_id_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/user_info_item_margin_left"
+                android:layout_marginTop="@dimen/user_info_item_margin_top"
+                android:backgroundTint="#bb937E"
+                android:text="@string/login_check_id"
+                android:textSize="@dimen/user_info_small_string_size"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edit_user_info_id"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/tv_user_info_pw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/user_info_item_margin_left"
+                android:layout_marginTop="@dimen/user_info_item_margin_top"
+                android:text="@string/login_password"
+                android:textSize="@dimen/user_info_string_size"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_edit_user_info_id_check" />
+
+            <EditText
+                android:id="@+id/edit_user_info_pw"
+                android:layout_width="@dimen/user_info_edit_width"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/user_info_item_margin_left"
+                android:layout_marginTop="@dimen/user_info_item_margin_top"
+                android:inputType="textPassword"
+                android:textSize="@dimen/user_info_string_size"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_user_info_pw"
+                android:importantForAutofill="no" />
+
+            <TextView
+                android:id="@+id/tv_user_info_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/user_info_item_margin_left"
+                android:layout_marginTop="@dimen/user_info_item_margin_top"
+                android:text="@string/login_name"
+                android:textSize="@dimen/user_info_string_size"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edit_user_info_pw" />
+
+            <EditText
+                android:id="@+id/edit_user_info_name"
+                android:layout_width="@dimen/user_info_edit_width"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/user_info_item_margin_left"
+                android:layout_marginTop="@dimen/user_info_item_margin_top"
+                android:inputType="text"
+                android:textSize="@dimen/user_info_string_size"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_user_info_name"
+                android:importantForAutofill="no" />
+
+            <TextView
+                android:id="@+id/tv_user_info_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/user_info_item_margin_left"
+                android:layout_marginTop="@dimen/user_info_item_margin_top"
+                android:text="@string/login_age"
+                android:textSize="@dimen/user_info_string_size"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edit_user_info_name" />
+
+            <EditText
+                android:id="@+id/edit_user_info_age"
+                android:layout_width="@dimen/user_info_edit_width"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/user_info_item_margin_left"
+                android:layout_marginTop="@dimen/user_info_item_margin_top"
+                android:inputType="number"
+                android:textSize="@dimen/user_info_string_size"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_user_info_age"
+                android:importantForAutofill="no" />
+
+            <TextView
+                android:id="@+id/tv_user_info_addr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/user_info_item_margin_left"
+                android:layout_marginTop="@dimen/user_info_item_margin_top"
+                android:text="@string/login_addr"
+                android:textSize="@dimen/user_info_string_size"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edit_user_info_age" />
+
+            <EditText
+                android:id="@+id/edit_user_info_addr"
+                android:layout_width="@dimen/user_info_edit_width"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/user_info_item_margin_left"
+                android:layout_marginTop="@dimen/user_info_item_margin_top"
+                android:inputType="text"
+                android:textSize="@dimen/user_info_string_size"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_user_info_addr"
+                android:importantForAutofill="no" />
+
+            <TextView
+                android:id="@+id/tv_user_info_genre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/user_info_item_margin_left"
+                android:layout_marginTop="@dimen/user_info_item_margin_top"
+                android:text="@string/login_genre"
+                android:textSize="@dimen/user_info_string_size"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edit_user_info_addr" />
+
+            <EditText
+                android:id="@+id/edit_user_info_genre"
+                android:layout_width="@dimen/user_info_edit_width"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/user_info_item_margin_left"
+                android:layout_marginTop="@dimen/user_info_item_margin_top"
+                android:inputType="text"
+                android:textSize="@dimen/user_info_string_size"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_user_info_genre"
+                android:importantForAutofill="no" />
+
+            <Button
+                android:id="@+id/btn_user_info_submit"
+                android:layout_width="@dimen/user_info_edit_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/user_info_item_margin_top"
+                android:text="@string/login_submit_data"
+                android:textSize="@dimen/user_info_string_size"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edit_user_info_genre" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

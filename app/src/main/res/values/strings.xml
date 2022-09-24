@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">Book,Book!</string>
+
+    <!-- Actionbar screen text -->
+    <string name="need_to_login">Need to Login</string>
+    <string name="update_user_information">Update User information</string>
+    <string name="received_message">Received message</string>
+    <string name="reading_history">Reading History</string>
+    <string name="log_out">Log out</string>
+
+    <!-- login screen $ user info text -->
+    <string name="login_id">ID</string>
+    <string name="login_password">Password</string>
+    <string name="login_sign_in">Sign in</string>
+    <string name="login_sign_up">Sign up</string>
+    <string name="login_name">Name</string>
+    <string name="login_age">Age</string>
+    <string name="login_addr">Address</string>
+    <string name="login_genre">Genre</string>
+    <string name="login_check_id">Check ID duplication</string>
+    <string name="login_submit_data">Submit</string>
+
+
+    <!-- main activity screen text -->
+    <string name="tab_menu_user_book_list">User book</string>
+    <string name="tab_menu_borrow_book">Borrow new book</string>
+    <string name="tab_menu_reading_history">Tracking Reading Book</string>
+    <string name="book_list_own">Own</string>
+    <string name="book_list_share">Share to</string>
+    <string name="book_list_rent">Rent to</string>
+    <string name="dialog_end_app_title">Finish the app</string>
+    <string name="dialog_end_app_description">Do you want to finish the app?</string>
+    <string name="dialog_end_app_ok">OK</string>
+    <string name="dialog_end_app_cancel">Cancel</string>
+
+    <!-- list screen text -->
+    <string name="list_add_new_book">Add new Book</string>
+
+    <!-- book info screen text -->
+    <string name="book_info_title">Title</string>
+    <string name="book_info_author">Author</string>
+    <string name="book_info_publisher">Publisher</string>
+    <string name="book_info_year">Year</string>
+    <string name="book_info_book_status">Book Status</string>
+    <string name="book_info_rad_btn_share">Share</string>
+    <string name="book_info_rad_btn_give">Giveaway</string>
+    <string name="book_info_rad_btn_rent">Rent</string>
+    <string name="book_info_rent_fee">Rent Fee</string>
+    <string name="book_info_owner_id">Owner ID</string>
+    <string name="book_info_add_book">Add a book</string>
+    <string name="book_info_update_book">Update a book</string>
+    <string name="book_info_share_book">Share a book</string>
+    <string name="book_info_take_book">Take a book</string>
+    <string name="book_info_rent_book">Rent a book</string>
+
+
+    <!-- admin activity text -->
+    <string name="create_demo_data">Create Demo data to DB</string>
+    <string name="dialog_end_admin_title">Finish the Admin mode</string>
+    <string name="dialog_end_admin_description">Do you want to finish the Admin mode?</string>
+    <string name="btnAdminView">View account</string>
+    <string name="btnAdminDelete">Delete Account</string>
+
+    <string name="UPDATE">Update </string>
+    <string name="Update_User">Update Account</string>
+    <string name="update_user">Enter the ID of User</string>
+    <string name="updateName">Enter Name</string>
+    <string name="updateAge">Enter Age</string>
+    <string name="updateAddress">Enter Address</string>
+
+    <string name="add_User">Add User</string>
+    <string name="sent_msg">Send Message</string>
+
+
+    <!-- admin view activity text -->
+    <string name="txtAdminViewAccount">viewAccount</string>
+
+    <!-- admin delete account activity text -->
+    <string name="txtIdtoDelete">Enter Id to delete</string>
+    <string name="btnAdminDeleteActivity">Delete Account</string>
+
+    <!-- user message text -->
+    <string name="user_msg_your_book_is_borrowed">Your book is borrowed to </string>
+    <string name="user_msg_your_book_is_given">Your book is given to </string>
+
+    <!-- toast message text -->
+    <string name="toast_cannot_find_id">Cannot find your ID. Try it again.</string>
+    <string name="toast_succeed_to_login">Succeed to login</string>
+    <string name="toast_clicks_left">clicks left</string>
+    <string name="toast_succeed_to_create_demo_data">Succeed to create Demo data</string>
+    <string name="toast_input_data_is_wrong">Input data is wrong. Please input correct data.</string>
+    <string name="toast_succeed_to_update_your_account">Succeed to update your account.</string>
+    <string name="toast_id_already_used">Input ID is already used. Please input another ID.</string>
+    <string name="toast_this_id_can_use">This ID can use.</string>
+    <string name="toast_succeed_to_create_new_account">Succeed to create new account. Please login with new account.</string>
+    <string name="toast_succeed_to_add_new_book">Succeed to add new book.</string>
+    <string name="toast_succeed_to_update_your_book_info">Succeed to update your book information.</string>
+    <string name="toast_failed_to_update_your_book_info">Failed to update your book information.</string>
+    <string name="toast_succeed_to_borrow_this_book">Succeed to borrow this book.</string>
+    <string name="toast_succeed_to_take_this_book">Succeed to take this book.</string>
+
+    <!-- reading tracker screen text -->
+    <string name="reading_tracker_reading_now">Reading now</string>
+    <string name="reading_tracker_hold_the_reading">Stop reading</string>
+    <string name="btnAddUser">Add User</string>
+    <string name="enter_message">Enter your Message Here!</string>
+    <string name="btnSend">Send Message</string>
+    <string name="btnUpdate">Update</string>
+
+</resources>

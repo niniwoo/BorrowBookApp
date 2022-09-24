@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- opening screen dimension -->
+    <dimen name="opening_textview_margin_top">100dp</dimen>
+    <dimen name="opening_textview_text_size">40sp</dimen>
+
+    <!-- login screen dimension -->
+    <dimen name="login_item_margin_left">50dp</dimen>
+    <dimen name="login_item_margin_top">30dp</dimen>
+    <dimen name="login_edit_width">200dp</dimen>
+    <dimen name="login_hidden_btn_height_width">100dp</dimen>
+    <dimen name="login_string_size">20dp</dimen>
+
+    <!-- book list dimension -->
+    <dimen name="list_item_layout_height">60dp</dimen>
+    <dimen name="list_add_book_btn_text_size">25sp</dimen>
+    <dimen name="list_item_title_layout_width">180dp</dimen>
+    <dimen name="list_item_title_text_size">20sp</dimen>
+    <dimen name="list_item_title_layout_margin_left">10dp</dimen>
+    <dimen name="list_item_inner_textview_height">20dp</dimen>
+    <dimen name="list_item_inner_textview_text_size">15sp</dimen>
+
+    <!-- book info dimension -->
+    <dimen name="book_info_item_margin_left">50dp</dimen>
+    <dimen name="book_info_item_margin_top">10dp</dimen>
+    <dimen name="book_info_string_size">20sp</dimen>
+    <dimen name="book_info_edit_width">200dp</dimen>
+
+    <!-- user info dimension -->
+    <dimen name="user_info_item_margin_left">50dp</dimen>
+    <dimen name="user_info_item_margin_top">10dp</dimen>
+    <dimen name="user_info_string_size">20sp</dimen>
+    <dimen name="user_info_small_string_size">10sp</dimen>
+    <dimen name="user_info_edit_width">200dp</dimen>
+
+
+    <!-- message activity / item layout dimension -->
+    <dimen name="message_item_layout_height">100dp</dimen>
+    <dimen name="message_item_text_size">20sp</dimen>
+    <dimen name="message_item_text_height">70dp</dimen>
+    <dimen name="message_item_sender_height">30dp</dimen>
+
+
+
+</resources>

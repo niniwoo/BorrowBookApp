@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dcd3cc"
+    tools:context=".AdminActivity">
+
+    <Button
+        android:id="@+id/btn_create_demo_data"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#bb937e"
+        android:text="@string/create_demo_data"
+        android:textSize="@dimen/user_info_string_size"
+        app:layout_constraintBottom_toTopOf="@+id/btnAdminView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnAdminView"
+        android:layout_width="240dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="22dp"
+        android:backgroundTint="#bb937e"
+        android:text="@string/btnAdminView"
+        android:textSize="19dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAdminDelete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_create_demo_data"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnAdminDelete"
+        android:layout_width="240dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#bb937e"
+        android:text="@string/btnAdminDelete"
+        android:textSize="19dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnUpdate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdminView"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="240dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#bb937e"
+        android:text="@string/Update_User"
+        android:textSize="19dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAddUser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdminDelete"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnAddUser"
+        android:layout_width="240dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="18dp"
+        android:backgroundTint="#bb937e"
+        android:text="@string/add_User"
+        android:textSize="19dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnMessage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnUpdate"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnMessage"
+        android:layout_width="240dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="79dp"
+        android:backgroundTint="#bb937e"
+        android:text="@string/sent_msg"
+        android:textSize="19dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddUser"
+        tools:ignore="TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
